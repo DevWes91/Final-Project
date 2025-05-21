@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #a49e9e; /* Light neutral background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Navigation Links */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+ul li a:hover {
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* General image styling (for PNG and others) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flag image styling */
+.flag-image {
+    display: block;
+    margin: 10px auto 20px auto;
+    max-width: 120px;
+    height: auto;
+}
+
+
+.home-image {
+    max-width: 600px; /* Reduced from 800px */
+    margin: 0 auto 40px auto;
+    padding: 10px;
+}
+
+/* Figures and image gallery styling */
+figure {
+    display: inline-block;
+    margin: 10px;
+    max-width: 90%;
+    width: 300px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Paragraph Styling */
+p {
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        width: 90%;
+    }
+
+    .home-image {
+        width: 90%;
+    }
+}
